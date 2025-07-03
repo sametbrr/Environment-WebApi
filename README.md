@@ -6,6 +6,9 @@
 
 ## 🚀 Getting Started
 
+// Program çalıştırılırken, environment ayarına göre appsettings konfigürasyon dosyaları yüklenir.
+// When the application runs, the appsettings configuration files are loaded based on the environment setting.
+
 ### Program.cs
 
 ```csharp
@@ -51,6 +54,9 @@ builder.Configuration
       "launchUrl": "swagger",
       "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {
+        // Debug sırasında, profil ayarına bağlı olarak environment belirlenir.
+        // During debugging, the environment is determined according to the selected profile.
+
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
@@ -61,6 +67,9 @@ builder.Configuration
       "launchUrl": "swagger",
       "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {
+        // Debug sırasında, profil ayarına bağlı olarak environment belirlenir.
+        // During debugging, the environment is determined according to the selected profile.
+
         "ASPNETCORE_ENVIRONMENT": "Beta"
       }
     },
@@ -71,6 +80,9 @@ builder.Configuration
       "launchUrl": "swagger",
       "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {
+        // Debug sırasında, profil ayarına bağlı olarak environment belirlenir.
+        // During debugging, the environment is determined according to the selected profile.
+
         "ASPNETCORE_ENVIRONMENT": "Production"
       }
     },
@@ -101,6 +113,8 @@ Example `.pubxml` file:
 ```xml
 <Project>
   <PropertyGroup>
+		<!-- Deployment sırasında ise environment ayarına göre projenin konfigürasyon dosyaları seçilir. --> 
+		<!-- During deployment, the configuration files for the project are selected based on the environment setting.-->
     <EnvironmentName>Beta</EnvironmentName> <!-- Possible values: Production, Development, Stage -->
     <DeleteExistingFiles>true</DeleteExistingFiles>
     <ExcludeApp_Data>false</ExcludeApp_Data>
@@ -147,7 +161,9 @@ Example `.pubxml` file:
 ## 📦 Features
 
 ✅ One-click environment variable debugging
+
 ✅ One-click environment-specific publishing
+
 ✅ Easy to use
 
 ---
