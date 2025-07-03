@@ -146,9 +146,9 @@ Example `.pubxml` file:
 
 ## 📦 Features
 
-✅ Tek tıkla ortam değişkeni debuglama
-✅ Tek tıkla ortam değişkeni publish etme
-✅ Kolay kullanım
+✅ One-click environment variable debugging
+✅ One-click environment-specific publishing
+✅ Easy to use
 
 ---
 
