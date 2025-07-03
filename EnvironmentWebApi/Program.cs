@@ -1,6 +1,8 @@
-var builder = WebApplication.CreateBuilder(args);
+﻿var builder = WebApplication.CreateBuilder(args);
 
-// Environment dosyas?n? dahil etmek i�in
+// Program çalıştırılırken, environment ayarına göre appsettings konfigürasyon dosyaları yüklenir.
+// When the application runs, the appsettings configuration files are loaded based on the environment setting.
+
 var environment = builder.Environment.EnvironmentName;
 builder.Configuration
     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
